@@ -3,7 +3,7 @@
  void setup()   
  {     
    size(500,500);
-   aLot = new Bacteria[1000];
+   aLot = new Bacteria[500];
    for(int i=0; i<aLot.length; i++){
      aLot[i] = new Bacteria();
    }
