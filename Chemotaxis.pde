@@ -3,7 +3,7 @@
  void setup()   
  {     
    size(500,500);
-   aLot = new Bacteria[10];
+   aLot = new Bacteria[1000];
    for(int i=0; i<aLot.length; i++){
      aLot[i] = new Bacteria();
    }
@@ -29,20 +29,20 @@
    }
    void walk(){
      if(mouseX > myX){
-         myX = myX + (int)(Math.random()*4-1);
+         myX = myX + (int)(Math.random()*10-1);
        }
        else if(mouseX < myX){
-         myX = myX - (int)(Math.random()*4-1);
+         myX = myX - (int)(Math.random()*10-1);
        }
      if(mouseY > myY){
-        myY = myY + (int)(Math.random()*4-1);
+        myY = myY + (int)(Math.random()*10-1);
       }
         else if(mouseY < myY){
-          myY = myY - (int)(Math.random()*4-1);
+          myY = myY - (int)(Math.random()*10-1);
         }
    }
    void show(){
-     fill(255,0,0);
+     fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
      ellipse(myX,myY,10,10);
      fill(0,255,0);
      ellipse(mouseX,mouseY,20,20);
