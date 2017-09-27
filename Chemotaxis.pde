@@ -3,7 +3,7 @@
  void setup()   
  {     
    size(500,500);
-   aLot = new Bacteria[250];
+   aLot = new Bacteria[50];
    for(int i=0; i<aLot.length; i++){
      aLot[i] = new Bacteria();
    }
@@ -12,7 +12,7 @@
  }   
  void draw()   
  {    
-   background(255);
+   background(150);
    for(int i = 0; i<aLot.length; i++){
      aLot[i].show();
      aLot[i].walk();
